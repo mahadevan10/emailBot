@@ -26,6 +26,11 @@ function App() {
     setLoading(false);
   };
 
+  function extractSubject(emailBody) {
+    const match = emailBody.match(/Subject:\s*(.*)/i);
+    return match ? match[1].trim() : "Application for the job";
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-200 flex flex-col items-center justify-center">
       <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg">
@@ -87,8 +92,10 @@ function App() {
               className="mt-4 w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
               onClick={() => {
                 const recipient = responseData.email;
-                const subject = encodeURIComponent("Application for the job");
-                const body = encodeURIComponent(editableEmailBody);
+                const subjectText = extractSubject(editableEmailBody);
+                const subject = encodeURIComponent(subjectText);
+                // Remove the subject line from the body if present
+                const body = encodeURIComponent(editableEmailBody.replace(/Subject:\s*.*\n?/i, ''));
                 window.open(
                   `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}&from=mahadevanmn10@gmail.com`,
                   '_blank'
