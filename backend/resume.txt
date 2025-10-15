@@ -1,0 +1,32 @@
+Name: Mahadevan Biju Menon
+email: mahadevanmn10@gmail.com | Github: github.com/mahadevan10 | linkedin: linkedin.com/in/mahadevanmn10 |
+phone number: +91 8848570115 | Portfolio: https://mahadevan10.github.io/portfolio/
+
+
+Summary
+Results-oriented professional with a strong analytical approach, quick adaptability, and experience in
+tech problem-solving and optimization.
+
+Experience
+CodeCraft Ventures Jan 2024 – Mar 2025
+Machine learning and web project delivery for clients; worked with modern AI/ML tools.
+
+Projects
+Tweet Sentiment Classifier Demo
+Fine-tuned RoBERTa model for sentiment classification; 82% F1 by handling class imbalance.
+Personal Voice Bot (Python, GCP, Docker) Website
+End-to-end voice bot pipeline (STT-LLM-TTS), optimized for latency and GCP deployment; advanced
+features (barge-in, browser integration).
+Aavara Website (React, Firebase, Node, Express) Demo
+Developed full-stack travel platform connecting guides and users with chat, booking, cloud image storage.
+
+Skills
+Python | JavaScript | React | Firebase | Node.js | TensorFlow | Docker | Google Cloud Platform |
+MS Excel | Git | VS Code | Flask
+
+Certifications
+Machine Learning Crash Course, Google (Certificate)
+
+Education
+B.Tech in Computer Science, APJ Abdul Kalam Technological University, 2019–2023
+CGPA: 7.1
